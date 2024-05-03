@@ -1,0 +1,159 @@
+body {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container .result {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  padding: 8px 24px 40px;
+  border-radius: 0 0 36px 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .result__title {
+  color: hsl(241, 100%, 89%);
+}
+.container .result__percentage {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top left, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
+  border-radius: 50%;
+  padding: 24px 40px;
+  align-self: center;
+}
+.container .result__percentage__number {
+  font-size: 48px;
+  color: hsl(221, 100%, 96%);
+  font-weight: 800;
+}
+.container .result__percentage__percent {
+  color: hsla(241, 100%, 89%, 0.6);
+}
+.container .result__description-wrapper__title {
+  color: hsl(221, 100%, 96%);
+  margin-bottom: 10px;
+}
+.container .result__description-wrapper__description {
+  color: hsl(241, 100%, 89%);
+}
+.container .summary {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 24px 32px;
+}
+.container .summary__items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .summary__items__item {
+  display: flex;
+  padding: 16px;
+  border-radius: 8px;
+}
+.container .summary__items__item__test-type {
+  display: flex;
+  gap: 12px;
+}
+.container .summary__items__item__percentage {
+  margin-left: auto;
+}
+.container .summary__items__item__percentage__percent {
+  font-weight: 700;
+}
+.container .summary__items__item__percentage__percent + span {
+  color: hsla(224, 30%, 27%, 0.6);
+  font-weight: 700;
+}
+.container .summary__items__item__percentage__percent + span::before {
+  content: "/";
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.container .summary__items__item:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.06);
+}
+.container .summary__items__item:nth-child(1) .summary__items__item__test-type__name {
+  color: hsl(0, 100%, 67%);
+}
+.container .summary__items__item:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.06);
+}
+.container .summary__items__item:nth-child(2) .summary__items__item__test-type__name {
+  color: hsl(39, 100%, 56%);
+}
+.container .summary__items__item:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.06);
+}
+.container .summary__items__item:nth-child(3) .summary__items__item__test-type__name {
+  color: hsl(166, 100%, 37%);
+}
+.container .summary__items__item:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.06);
+}
+.container .summary__items__item:nth-child(4) .summary__items__item__test-type__name {
+  color: hsl(234, 85%, 45%);
+}
+.container .summary button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: inherit;
+  padding: 14px 0;
+  border-radius: 24px;
+}
+.container .summary button:hover {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 4px 9px 29px 0px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 24px;
+    width: 700px;
+  }
+  .container .result {
+    flex: 50%;
+    border-radius: 24px;
+    padding: 40px 52px;
+    gap: 32px;
+  }
+  .container .result__title {
+    font-size: 22px;
+  }
+  .container .result__percentage__number {
+    font-size: 72px;
+    color: hsl(221, 100%, 96%);
+    font-weight: 800;
+  }
+  .container .result__percentage__percent {
+    color: hsla(241, 100%, 89%, 0.6);
+  }
+  .container .result__description-wrapper__title {
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  .container .summary {
+    flex: 50%;
+    border-radius: 24px;
+    padding: 40px 32px;
+  }
+  .container .summary__title {
+    font-size: 24px;
+  }
+  .container .summary button {
+    margin-top: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
