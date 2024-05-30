@@ -12,7 +12,11 @@
 *.xd
 *js
 *json
+<<<<<<< HEAD
 *.map
+=======
+.map
+>>>>>>> e2a582851869c2d7c035360a201b43d80125ac03
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
